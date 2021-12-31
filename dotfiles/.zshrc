@@ -21,6 +21,6 @@ PROMPT="[%t] %F{green}%n@%m%f %F{magenta}%2c%f \$vcs_info_msg_0_
 %F{blue}%#%f "
 
 # local settings like environment variables
-if [ -f .zsh_local_env ]; then
-    source .zsh_local_env
+if [ -f $HOME/.zsh_local_env ]; then
+    source $HOME/.zsh_local_env
 fi
