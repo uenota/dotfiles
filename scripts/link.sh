@@ -5,3 +5,6 @@ cd ${dotfiles_root}/dotfiles
 for file in .*; do
     ln -s ${PWD}/${file} ${HOME}
 done
+
+# create symlink for fish configs
+ln -s ${dotfiles_root}/fish ${HOME}/.config/fish
