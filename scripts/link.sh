@@ -7,4 +7,5 @@ for file in .*; do
 done
 
 # create symlink for fish configs
-ln -s ${dotfiles_root}/fish ${HOME}/.config/fish
+ln -s ${dotfiles_root}/fish/config.fish ${HOME}/.config/fish/config.fish
+ln -s ${dotfiles_root}/fish/functions/fish_prompt.fish ${HOME}/.config/fish/functions/fish_prompt.fish
