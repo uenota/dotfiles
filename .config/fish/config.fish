@@ -8,5 +8,9 @@ if status is-interactive
     set __fish_git_prompt_showupstream 'yes'
     set __fish_git_prompt_show_informative_status 'yes'
     set __fish_git_prompt_showcolorhints 'yes'
-    eval (/Users/uenot/.homebrew/bin/brew shellenv)
+
+    switch (uname)
+        case Darwin
+            eval ($HOME/.homebrew/bin/brew shellenv)
+    end
 end
