@@ -24,3 +24,9 @@ PROMPT="[%t] %F{green}%n@%m%f %F{magenta}%2c%f \$vcs_info_msg_0_
 if [ -f $HOME/.zsh_local_env ]; then
     source $HOME/.zsh_local_env
 fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/uenot/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/uenot/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/uenot/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/uenot/google-cloud-sdk/completion.zsh.inc'; fi
